@@ -1,0 +1,172 @@
+#Problm 1:-
+def area(b,r):
+     h=b*r/2 
+     return h 
+print(area(5,2.5))
+#Problm 2:-
+def relation(d):
+     dict = {'father':'Sharif' , 'brothers':'Nasir,Waris' , 'sister':'Areeba' , 'mother':'Ayesha'}
+     a = dict[d] 
+     return a
+print(relation('brothers'))
+#Problm 3:-
+import math 
+def func(b):
+     h=b**2*((math.sqrt(3))/4) 
+     return(h)
+print(func(5))
+#Problm 4:-
+def ev(l):
+    s=0
+    for i in l:
+         if i%2==0:
+             print(i)
+             s=s+i
+             print("sum of even no:",s)
+         else:
+             print("No even found!",)
+print(ev([1,2,3,5,16,7,8,10])) 
+#Problem 5:-
+def re(l):
+    y=sorted(l)
+    return y
+print (re(['55','88','4','2']))
+#Problm 6:-
+from math import pi
+def area_circle(r):
+     area=pi*(r**2) 
+     a = area+(area*0.05)   
+     print("Perimeter",2*pi*r) 
+     print("Area of Circle:",a)   
+     return""
+print(area_circle(13))
+#Problm 7:-
+def yyy(ch):
+     if(ch in 'A' or ch in 'a' or ch in 'E' or ch in 'e' or ch in 'I' or ch in 'i' or ch in 'O' or ch in 'o' or ch in 'U' or ch in 'u'):
+          print(ch, "is a Vowel")
+     else:
+          print(ch, "is a Consonant") 
+print(yyy('Nasir')) 
+#Problm 8:-
+def st(vc):
+     countv = 0 
+     countc = 0 
+     for i in vc:
+         if i in "AEIOU" or i in "aeiou":
+             countv += 1
+         else:
+             countc += 1
+     print("Numbers of vowels:",countv)
+     print("Numbers of consonants:",countc) 
+st('Adeel') 
+#Problm 9:-
+from math import pi 
+def rec(l,b):
+    area=l*b
+    a=area+(area*0.08) 
+    print("area of rectangle:",a)   
+    print("perimeter:",2*(l+b))
+print(rec(5,7))
+#Problm 10:-
+s = "12345678"
+e = 0
+o = 0 
+el = []
+ol = [] 
+for i in s:
+     if int(i)%2==0:
+         e += 1 
+         el.append(i) 
+     else:
+         o += 1 
+         ol.append(i)  
+print('Numbers of Even :',e) 
+print('Numbers of odd:',o)
+print("List of even:",el) 
+print("List of odd:",ol)
+#Problm 11:-
+s = 'adeel' 
+n = 0 
+az = 'abcdefghijklmnopqrstuvwxyz' 
+for i in s:
+     if i in az:
+         az = az.replace(i,"") 
+         n += 1 
+print(n) 
+# 
+print(az)
+#Problm 12:-
+def verb(s): 
+    if s[-1] == 'e': 
+        s = s.replace(s[-1],"")  
+        print("verb",s+"ing") 
+    else: 
+        print(s+"ing")
+print(verb('play'))
+#Problm 13:-
+from math import pi 
+def area(r,rr): 
+    a = pi*(r**2) 
+    aa = pi*(rr**2) 
+    if a > aa: 
+        fa = (aa - a) 
+    else: 
+        fa = (a - aa) 
+        return abs(fa)
+print(area(12,34))
+#Problm 14:-
+def tt(s):
+    nu=0
+    nl=0 
+    u = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    l = 'abcdefghijklmnopqrstuvwxyz' 
+    for i in s: 
+        if i in u: 
+            nu = nu+1
+        if i in l: 
+            nl = nl+1
+        print(nl,nu) 
+print(tt("Bilal"))
+#Problm 14:-             
+def cc(l,b,ll,bb): 
+    a = l*b 
+    aa = ll*bb 
+    if a > aa: 
+        fa = (aa - a) 
+    else: 
+        fa = (a - aa) 
+    return abs(fa)
+print(cc(5,4,5,10.5))
+#Problm 15:-
+from fractions import Fraction
+i = 1 
+f = 88
+ff = 0 
+for ii in range(i,f): 
+    ff = ff + Fraction(1,ii)
+print(ff)
+#Problm 16:-
+s = 'apple' 
+ss = "" 
+nn = 0 
+for i in s: 
+    n = s.count(i) 
+    if n > 1:
+        nn = nn+1
+    
+print('rep',nn)
+#Problm 16:-
+
+def sc(l,r): 
+    sa = l*l 
+    ca = 3.142*(r**2) 
+    print(sa) 
+    print(ca) 
+    if sa > ca: 
+        fa = (ca - sa) 
+    else: 
+        fa = (sa - ca)
+    return abs(fa) 
+print(sc(2,5))
+          
+
